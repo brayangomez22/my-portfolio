@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./assets/styles/config/variables";
+@import "./assets/styles/base/base";
+@import "./assets/styles/layout/layout";
+@import "./assets/styles/components/header";
+@import "./assets/styles/components/breakpoints";
