@@ -1,52 +1,66 @@
+section {
+  padding: 4.5rem 0 2rem;
+
+  &__title {
+    position: relative;
+    text-align: center;
+    z-index: var(--z-normal);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      left: calc(50% - 7px);
+      bottom: -16px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      border: 3px solid var(--first-color);
+    }
+
+    & h3 {
+      font-weight: var(--font-bold);
+      text-transform: uppercase;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        left: calc(50% - 45px);
+        bottom: -10px;
+        background-color: var(--first-color);
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        left: calc(50% + 15px);
+        bottom: -10px;
+        background-color: var(--first-color);
+      }
+    }
+  }
+}
+
+.container {
+  max-width: 1150px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+.main {
+  overflow: hidden;
+}
+
 .particles-js {
   position: absolute;
   height: 100vh;
   width: 100%;
   position: fixed;
   z-index: -10;
-}
-
-.section-title {
-  position: relative;
-  text-align: center;
-  z-index: var(--z-normal);
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    left: calc(50% - 7px);
-    bottom: -16px;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    border: 3px solid var(--first-color);
-  }
-
-  & h3 {
-    font-weight: var(--font-bold);
-    text-transform: uppercase;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 30px;
-      height: 3px;
-      left: calc(50% - 45px);
-      bottom: -10px;
-      background-color: var(--first-color);
-    }
-
-    &:after {
-      content: "";
-      position: absolute;
-      width: 30px;
-      height: 3px;
-      left: calc(50% + 15px);
-      bottom: -10px;
-      background-color: var(--first-color);
-    }
-  }
 }
 
 .contact-me,

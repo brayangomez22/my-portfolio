@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
 
 :root {
-  --font-bold: 700;
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
@@ -11,6 +10,11 @@
   --first-color: #58a6ff;
   --black-color: #0d1117;
   --white-color: #fff;
+  --btn-color: linear-gradient(
+    to right,
+    var(--black-color),
+    var(--first-color)
+  );
   --font-color: rgba(13, 17, 23, 0.9);
   --box-color: 0 4px 7px rgba(0, 0, 0, 0.3);
 
@@ -23,6 +27,7 @@
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
 
+  --font-me: 3.7rem;
   --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -33,6 +38,7 @@
 
   // Responsive typography
   @media screen and (min-width: 992px) {
+    --font-me: 5rem;
     --biggest-font-size: 4rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
@@ -45,6 +51,7 @@
   /*========== Font weight ==========*/
   --font-medium: 500;
   --font-semi-bold: 600;
+  --font-bold: 700;
   --font-black: 900;
 
   /*========== Margenes Bottom ==========*/

@@ -5,6 +5,27 @@
   }
 }
 
+@media screen and (max-width: 620px) {
+  .presentation {
+    &__img {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 866px) {
+  .presentation {
+    &__container {
+      justify-content: center;
+    }
+
+    &__data {
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+  }
+}
+
 @media screen and (min-width: 992px) {
   .container {
     margin-left: auto;
