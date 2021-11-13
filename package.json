@@ -20,6 +20,7 @@
     "@angular/router": "~12.1.1",
     "particles.js": "^2.0.0",
     "rxjs": "~6.6.0",
+    "swiper": "^7.2.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
   },

@@ -10,6 +10,7 @@
   --first-color: #58a6ff;
   --black-color: #0d1117;
   --white-color: #fff;
+  --gray-color: #777;
   --btn-color: linear-gradient(
     to right,
     var(--black-color),
@@ -17,6 +18,9 @@
   );
   --font-color: rgba(13, 17, 23, 0.9);
   --box-color: 0 4px 7px rgba(0, 0, 0, 0.3);
+  --box-inset-color: inset 0 0 50px #000;
+  --box-card-color: 0px 10px 50px 0px rgba(46, 61, 98, 0.8);
+  --box-card-hover-color: 0px 15px 35px rgba(0, 0, 0, 0.5);
 
   --container-color: linear-gradient(
     136deg,

@@ -22,6 +22,6 @@ export class AppComponent implements OnInit {
       this._elementDom.nativeElement
         .querySelector('#loader')
         .classList.add('loader-loaded');
-    }, 3000);
+    }, 1000);
   }
 }
