@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import SwiperCore, { SwiperOptions } from 'swiper';
+import SwiperCore, { SwiperOptions, EffectFade } from 'swiper';
+SwiperCore.use([EffectFade]);
 
 @Component({
   selector: 'app-skills',

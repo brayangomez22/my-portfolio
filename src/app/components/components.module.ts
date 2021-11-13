@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
+import { TradesComponent } from './trades/trades.component';
 
 @NgModule({
   declarations: [
@@ -13,12 +14,14 @@ import { SkillsComponent } from './skills/skills.component';
     PresentationComponent,
     AboutComponent,
     SkillsComponent,
+    TradesComponent,
   ],
   exports: [
     HeaderComponent,
     PresentationComponent,
     AboutComponent,
     SkillsComponent,
+    TradesComponent,
   ],
   imports: [CommonModule, SwiperModule],
 })
