@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { TradesComponent } from './trades/trades.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     SkillsComponent,
     TradesComponent,
     PortfolioComponent,
+    FooterComponent,
   ],
   exports: [
     HeaderComponent,
@@ -25,6 +27,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     SkillsComponent,
     TradesComponent,
     PortfolioComponent,
+    FooterComponent,
   ],
   imports: [CommonModule, SwiperModule],
 })

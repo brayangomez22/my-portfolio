@@ -65,7 +65,7 @@
   &__box {
     &-text {
       position: relative;
-      color: var(--gray-color);
+      color: var(--white-color);
       margin-top: 20px;
       font-weight: var(--font-bold);
       font-size: 18px;
@@ -96,14 +96,14 @@
       border-radius: 50%;
 
       & h2 {
-        color: var(--gray-color);
+        color: var(--white-color);
         font-weight: 700;
         font-size: 40px;
         transition: 0.5s;
 
         & span {
           font-size: 24px;
-          color: var(--gray-color);
+          color: var(--white-color);
           transition: 0.5s;
         }
       }
@@ -111,15 +111,6 @@
   }
 
   &__card:hover &__percent-number h2 {
-    color: var(--white-color);
     font-size: 60px;
-  }
-
-  &__card:hover &__percent-number h2 span {
-    color: var(--white-color);
-  }
-
-  &__card:hover &__box-text {
-    color: var(--white-color);
   }
 }
