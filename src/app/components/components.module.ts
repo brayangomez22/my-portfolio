@@ -10,6 +10,7 @@ import { TradesComponent } from './trades/trades.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FooterComponent } from './footer/footer.component';
 import { BannerComponent } from './banner/banner.component';
+import { PricesComponent } from './prices/prices.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { BannerComponent } from './banner/banner.component';
     PortfolioComponent,
     FooterComponent,
     BannerComponent,
+    PricesComponent,
   ],
   exports: [
     HeaderComponent,
@@ -31,6 +33,7 @@ import { BannerComponent } from './banner/banner.component';
     PortfolioComponent,
     FooterComponent,
     BannerComponent,
+    PricesComponent,
   ],
   imports: [CommonModule, SwiperModule],
 })
