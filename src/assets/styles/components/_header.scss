@@ -112,7 +112,8 @@
       transition: transform 500ms ease;
     }
 
-    &:hover::before {
+    &:hover::before,
+    &-active::before {
       transform: scale(1, 1);
       transform-origin: top;
       z-index: -1;
