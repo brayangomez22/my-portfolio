@@ -11,6 +11,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FooterComponent } from './footer/footer.component';
 import { BannerComponent } from './banner/banner.component';
 import { PricesComponent } from './prices/prices.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { PricesComponent } from './prices/prices.component';
     FooterComponent,
     BannerComponent,
     PricesComponent,
+    TestimonialsComponent,
   ],
   exports: [
     HeaderComponent,
@@ -34,6 +36,7 @@ import { PricesComponent } from './prices/prices.component';
     FooterComponent,
     BannerComponent,
     PricesComponent,
+    TestimonialsComponent,
   ],
   imports: [CommonModule, SwiperModule],
 })
