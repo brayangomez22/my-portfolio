@@ -1,0 +1,185 @@
+.testimonials {
+  position: relative;
+  margin-top: 70px;
+
+  &__img {
+    position: absolute;
+    filter: blur(5px);
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+  }
+
+  &__card {
+    margin: 30px;
+    max-width: 380px;
+    min-width: 300px;
+    width: 100%;
+    border-radius: 5px;
+    background: var(--black-color);
+    box-shadow: var(--box-card-color);
+    text-align: center;
+    position: relative;
+    padding-bottom: 60px;
+    padding-top: 57px;
+    transform-origin: top;
+    transition: transform 500ms ease;
+
+    @media screen and (max-width: 991px) {
+      & {
+        transform-origin: center;
+      }
+    }
+
+    &:hover {
+      transform: scaleY(1.2);
+    }
+
+    &-circle::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 153px;
+      height: 117px;
+      content: "";
+      background-image: url(../../img/testimonials/team-circle-1-1.png);
+      transform: perspective(200px) scaleX(0) scaleY(0);
+      transition: transform 500ms ease, opacity 500ms ease;
+      opacity: 0;
+      transform-origin: right top;
+    }
+
+    &-circle::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 140px;
+      height: 156px;
+      content: "";
+      background-image: url(../../img/testimonials/team-circle-1-2.png);
+      transform: perspective(150px) scaleX(0) scaleY(0);
+      transition: transform 500ms ease, opacity 500ms ease;
+      opacity: 0;
+      transform-origin: left bottom;
+    }
+
+    &:hover &-circle::before,
+    &:hover &-circle::after {
+      opacity: 0.3;
+      transform: perspective(200px) scaleX(1) scaleY(0.8);
+    }
+
+    &::before {
+      content: "";
+      border-radius: 5px;
+      background-image: linear-gradient(
+        90deg,
+        var(--first-color) 0%,
+        var(--black-color) 100%
+      );
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: scale(1, 0);
+      transform-origin: bottom;
+      transition: transform 500ms ease;
+    }
+
+    &:hover::before {
+      transform: scale(1, 1);
+      transform-origin: top;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    padding: 0 50px;
+    transform-origin: top;
+    transition: transform 500ms ease;
+
+    &-name {
+      margin: 0;
+      font-size: var(--h2-font-size);
+      font-weight: var(--font-bold);
+      color: var(--first-color);
+      line-height: 1em;
+      transition: all 500ms ease;
+    }
+
+    &-rol,
+    &-description {
+      color: var(--white-color);
+      font-size: var(--normal-font-size);
+      margin-top: 18px;
+      margin-bottom: 15px;
+      transition: all 500ms ease;
+    }
+  }
+
+  &__card:hover &__inner {
+    transform: scaleY(0.8);
+  }
+
+  &__card:hover &__inner-name {
+    color: var(--white-color);
+  }
+
+  &__social {
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 500ms ease;
+
+    & > a {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: var(--white-color);
+      opacity: 0.3;
+      transition: all 500ms ease;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:hover i {
+        color: var(--first-color);
+      }
+    }
+
+    & > a i {
+      color: var(--gray-ligth-color);
+      transition: all 500ms ease;
+      font-size: 16px;
+      border: 2px solid var(--white-color) var(--first-color);
+    }
+
+    & a + a {
+      margin-left: 10px;
+    }
+  }
+
+  &__card:hover &__social {
+    opacity: 1;
+    visibility: visible;
+  }
+}

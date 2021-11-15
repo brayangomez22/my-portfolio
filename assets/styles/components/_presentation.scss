@@ -1,0 +1,85 @@
+.presentation {
+  position: relative;
+  text-transform: uppercase;
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__data {
+    margin-top: 50px;
+    align-self: start;
+  }
+
+  &__hello {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-medium);
+
+    &::after {
+      content: "";
+      height: 2px;
+      width: 18vw;
+      background: var(--first-color);
+      margin-left: 5%;
+      filter: blur(1px);
+    }
+  }
+
+  &__info {
+    position: relative;
+    margin-top: -33px;
+  }
+
+  &__me {
+    font-size: var(--font-me);
+  }
+
+  &__name {
+    position: relative;
+    font-size: var(--font-me);
+    display: block;
+    color: var(--black-color);
+    -webkit-text-stroke: 0.3vw #383d52;
+    text-transform: uppercase;
+
+    &::before {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      color: var(--first-color);
+      -webkit-text-stroke: 0vw #383d52;
+      overflow: hidden;
+      animation: animateText 6s linear infinite;
+    }
+
+    @keyframes animateText {
+      0%,
+      10%,
+      60% {
+        width: 0%;
+      }
+      70%,
+      90% {
+        width: 100%;
+      }
+    }
+  }
+
+  &__rol {
+    font-size: 1.5rem;
+  }
+
+  &__img {
+    width: 50%;
+  }
+}
