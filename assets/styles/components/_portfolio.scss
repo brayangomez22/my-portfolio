@@ -168,8 +168,10 @@
   -moz-box-align: center;
   align-items: center;
   justify-content: center;
+  margin: auto;
   padding: 0 70px;
   margin-bottom: 180px;
+  max-width: 1300px;
 
   &__grid {
     margin: 50px 0px 0px;
