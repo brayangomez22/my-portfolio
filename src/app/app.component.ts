@@ -10,7 +10,7 @@ export class AppComponent implements OnInit {
   constructor(private _elementDom: ElementRef) {}
 
   ngOnInit(): void {
-    particlesJS?.load('particles-js', '../assets/particles.json', () => {
+    particlesJS?.load('particles-js', 'assets/particles.json', () => {
       console.log('callback - particles.js config loaded');
     });
 
