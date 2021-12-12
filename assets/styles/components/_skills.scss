@@ -8,6 +8,10 @@
 
 .skills {
   position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
 
   &__container {
     margin-top: 60px;
@@ -18,7 +22,7 @@
     position: relative;
     background: transparent;
     width: 250px;
-    box-shadow: var(--box-card-color);
+    box-shadow: var(--box-card-hover-color);
     display: flex;
     justify-content: center;
     align-items: center;

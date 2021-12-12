@@ -83,7 +83,7 @@
       z-index: var(--z-normal);
       width: calc(100% + 60px);
       background: var(--black-color);
-      box-shadow: var(--box-card-color);
+      box-shadow: var(--box-card-hover-color);
       padding: 20px;
       border-radius: 6px;
       color: var(--gray-ligth-color);
@@ -184,7 +184,7 @@
 
   &__item {
     background: var(--black-color);
-    box-shadow: 0px 10px 60px 0px rgba(46, 61, 98, 0.8);
+    box-shadow: var(--box-card-hover-color);
     display: flex;
     -moz-box-pack: justify;
     justify-content: space-between;
