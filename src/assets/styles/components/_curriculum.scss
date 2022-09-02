@@ -1,0 +1,293 @@
+.curriculum {
+  background: #f0f0f0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+
+  &__container {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    min-height: 1000px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    -webkit-box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  }
+
+  &__left {
+    position: relative;
+    background: #192229;
+    padding: 40px;
+  }
+
+  &__profile {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    &-img {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      & img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+    }
+
+    &-name {
+      color: #fff;
+      font-size: 1.5em;
+      margin-top: 20px;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 600;
+      line-height: 1.4em;
+
+      & span {
+        font-size: 0.8em;
+        font-weight: 300;
+      }
+    }
+  }
+
+  &__info {
+    padding-top: 40px;
+
+    &-title {
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    &-list {
+      position: relative;
+
+      &--item {
+        position: relative;
+        list-style: none;
+        margin: 10px 0;
+        cursor: pointer;
+
+        & span {
+          color: #fff;
+          font-weight: 300;
+
+          & a {
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+
+        & .icon {
+          display: inline-block;
+          width: 30px;
+          font-size: 18px;
+          color: #58b3f3;
+        }
+      }
+    }
+  }
+
+  &__info-education &__info-list--item {
+    margin-bottom: 15px;
+
+    & h5 {
+      color: #58b3f3;
+      font-weight: 500;
+    }
+
+    & h4:nth-child(2) {
+      color: #fff;
+      font-weight: 500;
+    }
+
+    & h4 {
+      color: #fff;
+      font-weight: 300;
+    }
+  }
+
+  &__right {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+  }
+
+  &__about {
+    margin-bottom: 50px;
+
+    &-title {
+      color: #003147;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    &-description {
+      color: #333;
+    }
+
+    &-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      margin: 20px 0;
+
+      &--year {
+        min-width: 150px;
+
+        & h5 {
+          text-transform: uppercase;
+          color: #848c90;
+          font-weight: 600;
+        }
+      }
+
+      &--text {
+        & h4 {
+          text-transform: uppercase;
+          color: #58b3f3;
+          font-size: 16px;
+        }
+
+        & p {
+          color: #848c90;
+        }
+      }
+    }
+  }
+
+  &__about:last-child {
+    margin-bottom: 0;
+  }
+
+  &__about-skills {
+    &-box {
+      position: relative;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      & h4 {
+        text-transform: uppercase;
+        color: #848c90;
+        font-weight: 500;
+      }
+    }
+
+    &--percent {
+      position: relative;
+      width: 100%;
+      height: 10px;
+      background: #f0f0f0;
+
+      & div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: #58b3f3;
+      }
+    }
+  }
+
+  &__about-interest &__about-interest--list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    & li {
+      list-style: none;
+      color: #333;
+      font-weight: 500;
+      margin: 10px 0;
+
+      & .fas {
+        color: #58b3f3;
+        font-size: 18px;
+        width: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .curriculum {
+    &__container {
+      margin: 10px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__about-interest &__about-interest--list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .curriculum {
+    &__about {
+      &-box {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+        &--year {
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    &__about-interest &__about-interest--list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__about-skills {
+      &-box {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+} /*# sourceMappingURL=style.css.map */
